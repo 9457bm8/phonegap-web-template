@@ -1,16 +1,8 @@
 <?xml version="1.0"?>
 
 <!-- Configuration Start: Please customize following configuration -->
-<widget xmlns="http://www.w3.org/ns/widgets" 
-        xmlns:gap="http://phonegap.com/ns/1.0" 
-        id="9457bm8/phonegap-web-template" 
-        version="1.1">
-        
-    <engines>
-        <engine name="cordova-android" version=">=6.3.0" />
-    </engines>
-
-    
+<widget xmlns="http://www.w3.org/ns/widgets"  xmlns:gap="http://phonegap.com/ns/1.0"  id="phonegap-web-template-9457/bm8"  version="1.1">
+      
     <name>3CHI包膜預約系統</name>
     <description>包膜師線上承接包膜服務</description>
     <author href="https://www.9457.tw/bm8/" email="9457tw@gmail.com">9457Studio</author>
@@ -73,7 +65,9 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
     
     <!-- geolocation -->
-        
+        <engines>
+        <engine name="cordova-android" version=">=6.3.0" />
+        </engines>
  <!-- android -->
 <platform name="android">
 
