@@ -3,7 +3,7 @@
 <!-- Configuration Start: Please customize following configuration -->
 <widget xmlns="http://www.w3.org/ns/widgets" 
         xmlns:gap="http://phonegap.com/ns/1.0" 
-        id="www.9457.tw/bm8" 
+        id="9457bm8/phonegap-web-template" 
         version="1.1">
         
     <engines>
