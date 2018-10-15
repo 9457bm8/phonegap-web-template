@@ -5,6 +5,11 @@
         xmlns:gap="http://phonegap.com/ns/1.0" 
         id="phonegap-web-template.www.9457.tw/bm8/" 
         version="1.1">
+        
+    <engines>
+        <engine name="cordova-android" version=">=6.3.0" />
+    </engines>
+
     
     <name>3CHI包膜預約系統</name>
     <description>包膜師線上承接包膜服務</description>
