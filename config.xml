@@ -73,6 +73,35 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.3.2" />
     
     <!-- geolocation -->
+        
+ <!-- android -->
+<platform name="android">
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-feature android:name="android.hardware.location.gps" />
+        </config-file>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+          <feature name="Geolocation">
+              <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+          </feature>
+        </config-file>
+
+        <source-file src="src/android/Geolocation.java" target-dir="src/org/apache/cordova/geolocation/" />
+
+        <js-module src="www/android/geolocation.js" name="geolocation">
+            <clobbers target="navigator.geolocation" />
+        </js-module>
+
+        <!-- We don't expose PositionError via clobber on Android as we use it internally only -->
+        <js-module src="www/PositionError.js" name="PositionError">
+            <runs />
+        </js-module>
+
+        </platform>
+
    
     <!-- ios -->
     <platform name="ios">
